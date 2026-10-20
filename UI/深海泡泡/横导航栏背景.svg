@@ -1,0 +1,18 @@
+<svg width="750" height="116" viewBox="0 0 750 116" xmlns="http://www.w3.org/2000/svg">
+<defs>
+<linearGradient id="vg161" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#7FE3F0" stop-opacity="0.22"/><stop offset="1" stop-color="#7FE3F0" stop-opacity="0.09"/></linearGradient>
+<linearGradient id="hg162" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#3FA9C4" stop-opacity="0.05"/><stop offset="1" stop-color="#3FA9C4" stop-opacity="0.85"/></linearGradient>
+<linearGradient id="hg163" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#EAFBFF" stop-opacity="0.55"/><stop offset="1" stop-color="#EAFBFF" stop-opacity="0.04"/></linearGradient>
+<radialGradient id="rg164" cx="34%" cy="28%" r="74%"><stop offset="0" stop-color="#7FE3F0" stop-opacity="0.30"/><stop offset="1" stop-color="#7FE3F0" stop-opacity="0.03"/></radialGradient>
+<radialGradient id="rg165" cx="34%" cy="28%" r="74%"><stop offset="0" stop-color="#7FE3F0" stop-opacity="0.28"/><stop offset="1" stop-color="#7FE3F0" stop-opacity="0.03"/></radialGradient>
+</defs>
+<rect x="1" y="1" width="748" height="114" rx="18" fill="url(#vg161)"/>
+<rect x="1" y="1" width="748" height="114" rx="18" fill="none" stroke="#3FA9C4" stroke-width="1" opacity="0.8"/>
+<rect x="14" y="103" width="722" height="2.2" fill="url(#hg162)"/>
+<rect x="14" y="96" width="722" height="1" fill="url(#hg163)"/>
+<circle cx="16" cy="86" r="6" fill="url(#rg164)"/>
+<circle cx="16" cy="86" r="6" fill="none" stroke="#7FE3F0" stroke-width="1" opacity="0.9"/>
+<path d="M12.1 85.6A4 4 0 0 1 14.5 82.3" fill="none" stroke="#EAFBFF" stroke-width="1" opacity="0.8" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="732" cy="82" r="4.4" fill="url(#rg165)"/>
+<circle cx="732" cy="82" r="4.4" fill="none" stroke="#7FE3F0" stroke-width="1" opacity="0.9"/>
+</svg>

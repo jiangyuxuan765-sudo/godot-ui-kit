@@ -1,0 +1,1343 @@
+[gd_scene format=3 uid="uid://b8277xsqwpubb"]
+
+[ext_resource type="Theme" uid="uid://dbinrcufuu44f" path="res://theme/第十八套-云崖古笺.tres" id="1_theme"]
+[ext_resource type="Script" uid="uid://bqg8cxu880ans" path="res://scenes/导航栏单选.gd" id="2_nav"]
+[ext_resource type="Script" uid="uid://cfvgvjabnihji" path="res://scenes/虚拟摇杆.gd" id="3_joy"]
+[ext_resource type="Script" uid="uid://ddjvyvijkqxa2" path="res://scenes/贴图滑块.gd" id="4_slider"]
+[ext_resource type="Script" uid="uid://bs7o1y35em46x" path="res://scenes/贴图滑块竖.gd" id="5_vslider"]
+[ext_resource type="Script" uid="uid://bnsjij4arqsad" path="res://scenes/关闭按钮.gd" id="6_close"]
+[ext_resource type="Script" uid="uid://c32iykwj5juga" path="res://scenes/物品框.gd" id="7_slot"]
+[ext_resource type="Script" uid="uid://dw3bggpcf3tph" path="res://scenes/信息卡片进度.gd" id="8_cardprog"]
+[ext_resource type="Script" uid="uid://dm7810ssojgvk" path="res://scenes/tree示例.gd" id="9_tree"]
+[ext_resource type="Script" uid="uid://bctf18wc3nfkl" path="res://scenes/文字标签栏.gd" id="10_tabbar"]
+[ext_resource type="Shader" uid="uid://c3vkv12mqeei2" path="res://scenes/物品框发光.gdshader" id="11_glow"]
+[ext_resource type="Texture2D" uid="uid://2fo6xjtwbv88" path="res://UI/云崖古笺/成功提示组件.svg" id="20_ok"]
+[ext_resource type="Texture2D" uid="uid://8qslv45w0dc7" path="res://UI/云崖古笺/失败提示组件.svg" id="21_fail"]
+[ext_resource type="Texture2D" uid="uid://pk0thhfjho5j" path="res://UI/云崖古笺/错误提示.svg" id="22_err"]
+[ext_resource type="Texture2D" uid="uid://p0eb27115grx" path="res://UI/云崖古笺/加载弹窗.svg" id="23_loading"]
+[ext_resource type="Texture2D" uid="uid://ip3v0vi5rl4h" path="res://UI/云崖古笺/物品框.svg" id="24_slotimg"]
+[ext_resource type="Texture2D" uid="uid://c4ahb8e20x6lq" path="res://UI/云崖古笺/卡牌框.svg" id="25_card"]
+[ext_resource type="Texture2D" uid="uid://bocifrcpofrqp" path="res://UI/云崖古笺/信息卡片.svg" id="26_info"]
+[ext_resource type="Texture2D" uid="uid://b6ua1hnx4qhu0" path="res://UI/云崖古笺/横导航栏背景.svg" id="27_navbg"]
+[ext_resource type="Texture2D" uid="uid://dh8lvotiy4x4b" path="res://UI/云崖古笺/横导航栏选中框.svg" id="28_navhl"]
+[ext_resource type="Texture2D" uid="uid://c2y7uo8hnunfi" path="res://UI/云崖古笺/摇杆背景.svg" id="29_joybg"]
+[ext_resource type="Texture2D" uid="uid://da78nwuckb0d5" path="res://UI/云崖古笺/摇杆键.svg" id="30_joyknob"]
+[ext_resource type="Texture2D" uid="uid://dx2f7xe0jvrlm" path="res://UI/云崖古笺/滑块空槽.svg" id="31_sslot"]
+[ext_resource type="Texture2D" uid="uid://bx1fenjxivqae" path="res://UI/云崖古笺/滑块填充.svg" id="32_sfill"]
+[ext_resource type="Texture2D" uid="uid://dba0ipt7bkky3" path="res://UI/云崖古笺/滑块拖动键.svg" id="33_grab"]
+[ext_resource type="Texture2D" uid="uid://isi1i6xpauoi" path="res://UI/云崖古笺/竖滑块空槽.svg" id="34_vslot"]
+[ext_resource type="Texture2D" uid="uid://bpq5mpo3fvxq6" path="res://UI/云崖古笺/竖滑块填充.svg" id="35_vfill"]
+[ext_resource type="Texture2D" uid="uid://bbod5x1jq6aep" path="res://UI/云崖古笺/横滚动条空槽.svg" id="36_hbarslot"]
+[ext_resource type="Texture2D" uid="uid://nwh6jtdyi8wj" path="res://UI/云崖古笺/横滚动条拖动键.svg" id="37_hbargrab"]
+[ext_resource type="Texture2D" uid="uid://nkj82yb0jkyp" path="res://UI/云崖古笺/竖滚动条空槽.svg" id="38_vbarslot"]
+[ext_resource type="Texture2D" uid="uid://ngvenfqqafxk" path="res://UI/云崖古笺/竖滚动条拖动键.svg" id="39_vbargrab"]
+[ext_resource type="Texture2D" uid="uid://iab8ldc33uit" path="res://UI/云崖古笺/竖条形进度条空槽.svg" id="40_vprogslot"]
+[ext_resource type="Texture2D" uid="uid://ckx1cpkv0rrmj" path="res://UI/云崖古笺/竖条形进度条填充.svg" id="41_vprogfill"]
+[ext_resource type="Texture2D" uid="uid://bwk0s45rn2pr3" path="res://UI/云崖古笺/线性进度条空槽.svg" id="42_progslot"]
+[ext_resource type="Texture2D" uid="uid://cnckfjapcam3d" path="res://UI/云崖古笺/线性进度条填充.svg" id="43_progfill"]
+[ext_resource type="Texture2D" uid="uid://c4kluhxvbgajn" path="res://UI/云崖古笺/线性进度条填充金.svg" id="44_progfillg"]
+[ext_resource type="Texture2D" uid="uid://cn2xmwihq3aff" path="res://UI/云崖古笺/线性进度条填充绿.svg" id="45_progfilln"]
+[ext_resource type="Texture2D" uid="uid://deftns6om8tfl" path="res://UI/云崖古笺/卡片进度条空槽.svg" id="46_cardslot"]
+[ext_resource type="Texture2D" uid="uid://dwoclu6bx0751" path="res://UI/云崖古笺/卡片进度条填充.svg" id="47_cardfill"]
+[ext_resource type="Texture2D" uid="uid://bo2rqbecve3ai" path="res://UI/云崖古笺/环形加载指示器.svg" id="48_ring"]
+[ext_resource type="Texture2D" uid="uid://bwtjfojvv3je8" path="res://UI/云崖古笺/步进指示器.svg" id="49_step"]
+[ext_resource type="Texture2D" uid="uid://endeupco012u" path="res://UI/云崖古笺/步进指示器2.svg" id="50_step2"]
+[ext_resource type="Texture2D" uid="uid://cum3l54rpi4vs" path="res://UI/云崖古笺/占位符.svg" id="51_ph"]
+[ext_resource type="Texture2D" uid="uid://capk71wbqtu2e" path="res://UI/云崖古笺/取消图标.svg" id="52_cancel"]
+[ext_resource type="Texture2D" uid="uid://bn3wk68xuvebn" path="res://UI/云崖古笺/战斗图标.svg" id="60_ni0"]
+[ext_resource type="Texture2D" uid="uid://dla81or5hktog" path="res://UI/云崖古笺/卡牌图标.svg" id="61_ni1"]
+[ext_resource type="Texture2D" uid="uid://b8ew5kau6nhfh" path="res://UI/云崖古笺/宝箱图标.svg" id="62_ni2"]
+[ext_resource type="Texture2D" uid="uid://bji8ay4acj0sw" path="res://UI/云崖古笺/部落图标.svg" id="63_ni3"]
+[ext_resource type="Texture2D" uid="uid://blwgxk7ahpmyf" path="res://UI/云崖古笺/城堡图标.svg" id="64_ni4"]
+[ext_resource type="Texture2D" uid="uid://bco45k6yqmyak" path="res://UI/云崖古笺/商店图标.svg" id="65_shop"]
+[ext_resource type="Texture2D" uid="uid://1ma3vmtilll7" path="res://UI/云崖古笺/设置图标.svg" id="66_setting"]
+[ext_resource type="Texture2D" uid="uid://dogk23ba1mooo" path="res://UI/云崖古笺/圣水图标.svg" id="67_elixir"]
+[ext_resource type="Texture2D" uid="uid://dngh32xwduc0o" path="res://UI/云崖古笺/金币图标.svg" id="68_coin"]
+[ext_resource type="Texture2D" uid="uid://ciqim1pb2e833" path="res://UI/云崖古笺/宝石图标.svg" id="69_gem"]
+[ext_resource type="Texture2D" uid="uid://kc6t5j3tdgxs" path="res://UI/云崖古笺/奖杯图标.svg" id="70_trophy"]
+[ext_resource type="Texture2D" uid="uid://hx2kuvkiw045" path="res://UI/云崖古笺/分享图标48.svg" id="71_share"]
+[ext_resource type="Texture2D" uid="uid://dvqyt5waaopqk" path="res://UI/云崖古笺/列表图标48.svg" id="72_list"]
+[ext_resource type="Texture2D" uid="uid://oh42qxv1by50" path="res://UI/云崖古笺/成就图标48.svg" id="73_achico"]
+[ext_resource type="Texture2D" uid="uid://cjivbjfviy83l" path="res://UI/云崖古笺/收藏图标48.svg" id="74_fav"]
+[ext_resource type="Texture2D" uid="uid://c7dtlud3lv67i" path="res://UI/云崖古笺/点赞图标48.svg" id="75_like"]
+[ext_resource type="Texture2D" uid="uid://dfu7rf03um1jj" path="res://UI/云崖古笺/返回图标48.svg" id="76_back"]
+[ext_resource type="Texture2D" uid="uid://bda206xwopso2" path="res://UI/云崖古笺/确定图标.svg" id="77_confirm"]
+[ext_resource type="Texture2D" uid="uid://d3y4i6b610cis" path="res://UI/云崖古笺/竖滑块拖动键.svg" id="78_vgrabh"]
+
+[sub_resource type="ShaderMaterial" id="M0"]
+shader = ExtResource("11_glow")
+shader_parameter/selected = 0.0
+shader_parameter/glow_color = Color(0.55, 0.61, 0.56, 1)
+shader_parameter/glow_size = 4.0
+
+[sub_resource type="ShaderMaterial" id="M1"]
+shader = ExtResource("11_glow")
+shader_parameter/selected = 0.0
+shader_parameter/glow_color = Color(0.55, 0.61, 0.56, 1)
+shader_parameter/glow_size = 4.0
+
+[sub_resource type="ShaderMaterial" id="M2"]
+shader = ExtResource("11_glow")
+shader_parameter/selected = 0.0
+shader_parameter/glow_color = Color(0.55, 0.61, 0.56, 1)
+shader_parameter/glow_size = 4.0
+
+[sub_resource type="ShaderMaterial" id="M3"]
+shader = ExtResource("11_glow")
+shader_parameter/selected = 0.0
+shader_parameter/glow_color = Color(0.55, 0.61, 0.56, 1)
+shader_parameter/glow_size = 4.0
+
+[sub_resource type="ShaderMaterial" id="M4"]
+shader = ExtResource("11_glow")
+shader_parameter/selected = 0.0
+shader_parameter/glow_color = Color(0.55, 0.61, 0.56, 1)
+shader_parameter/glow_size = 4.0
+
+[sub_resource type="ShaderMaterial" id="M5"]
+shader = ExtResource("11_glow")
+shader_parameter/selected = 0.0
+shader_parameter/glow_color = Color(0.55, 0.61, 0.56, 1)
+shader_parameter/glow_size = 4.0
+
+[sub_resource type="ShaderMaterial" id="M6"]
+shader = ExtResource("11_glow")
+shader_parameter/selected = 0.0
+shader_parameter/glow_color = Color(0.55, 0.61, 0.56, 1)
+shader_parameter/glow_size = 4.0
+
+[sub_resource type="ShaderMaterial" id="M7"]
+shader = ExtResource("11_glow")
+shader_parameter/selected = 0.0
+shader_parameter/glow_color = Color(0.55, 0.61, 0.56, 1)
+shader_parameter/glow_size = 4.0
+
+[node name="CyberRiftTest" type="Control" unique_id=599327648]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("1_theme")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=472245760]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.055, 0.067, 0.067, 1)
+
+[node name="Scroll" type="ScrollContainer" parent="." unique_id=833871319]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBox" type="VBoxContainer" parent="Scroll" unique_id=1336760801]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Margin" type="MarginContainer" parent="Scroll/VBox" unique_id=1732595323]
+layout_mode = 2
+theme_override_constants/margin_left = 24
+theme_override_constants/margin_top = 24
+theme_override_constants/margin_right = 24
+theme_override_constants/margin_bottom = 24
+
+[node name="Inner" type="VBoxContainer" parent="Scroll/VBox/Margin" unique_id=1529225996]
+layout_mode = 2
+theme_override_constants/separation = 26
+
+[node name="t_btn" type="Label" parent="Scroll/VBox/Margin/Inner" unique_id=2120218484]
+layout_mode = 2
+theme_override_font_sizes/font_size = 26
+text = "── 实心按钮 Button(水青) / ButtonGold / ButtonGreen / ButtonRed ──"
+horizontal_alignment = 1
+autowrap_mode = 2
+
+[node name="BtnRow" type="HBoxContainer" parent="Scroll/VBox/Margin/Inner" unique_id=588246229]
+layout_mode = 2
+theme_override_constants/separation = 20
+alignment = 1
+
+[node name="B1" type="Button" parent="Scroll/VBox/Margin/Inner/BtnRow" unique_id=1754284791]
+custom_minimum_size = Vector2(170, 82)
+layout_mode = 2
+text = "对战"
+
+[node name="B2" type="Button" parent="Scroll/VBox/Margin/Inner/BtnRow" unique_id=1841863968]
+custom_minimum_size = Vector2(170, 82)
+layout_mode = 2
+theme_type_variation = &"ButtonGold"
+text = "购买"
+
+[node name="B3" type="Button" parent="Scroll/VBox/Margin/Inner/BtnRow" unique_id=1370540369]
+custom_minimum_size = Vector2(170, 82)
+layout_mode = 2
+theme_type_variation = &"ButtonGreen"
+text = "确定"
+
+[node name="B4" type="Button" parent="Scroll/VBox/Margin/Inner/BtnRow" unique_id=1226138229]
+custom_minimum_size = Vector2(170, 82)
+layout_mode = 2
+theme_type_variation = &"ButtonRed"
+text = "放弃"
+
+[node name="BtnRow2" type="HBoxContainer" parent="Scroll/VBox/Margin/Inner" unique_id=718525828]
+layout_mode = 2
+theme_override_constants/separation = 20
+alignment = 1
+
+[node name="B5" type="Button" parent="Scroll/VBox/Margin/Inner/BtnRow2" unique_id=844570990]
+custom_minimum_size = Vector2(170, 82)
+layout_mode = 2
+size_flags_vertical = 4
+theme_type_variation = &"ButtonGrey"
+text = "取消"
+
+[node name="B6" type="Button" parent="Scroll/VBox/Margin/Inner/BtnRow2" unique_id=110471302]
+custom_minimum_size = Vector2(170, 82)
+layout_mode = 2
+size_flags_vertical = 4
+theme_type_variation = &"ButtonOutline"
+text = "更多"
+
+[node name="B7" type="Button" parent="Scroll/VBox/Margin/Inner/BtnRow2" unique_id=1000037678]
+custom_minimum_size = Vector2(170, 82)
+layout_mode = 2
+size_flags_vertical = 4
+disabled = true
+text = "禁用"
+
+[node name="B8" type="Button" parent="Scroll/VBox/Margin/Inner/BtnRow2" unique_id=754664663]
+custom_minimum_size = Vector2(110, 110)
+layout_mode = 2
+theme_type_variation = &"IconButton"
+icon = ExtResource("77_confirm")
+expand_icon = true
+
+[node name="t_ico" type="Label" parent="Scroll/VBox/Margin/Inner" unique_id=1378609190]
+layout_mode = 2
+theme_override_font_sizes/font_size = 26
+text = "── 图标按钮 IconButton(96x96 底 + Icons 目录图标) ──"
+horizontal_alignment = 1
+autowrap_mode = 2
+
+[node name="IcoRow" type="HBoxContainer" parent="Scroll/VBox/Margin/Inner" unique_id=494554827]
+layout_mode = 2
+theme_override_constants/separation = 16
+alignment = 1
+
+[node name="I1" type="Button" parent="Scroll/VBox/Margin/Inner/IcoRow" unique_id=1141134721]
+custom_minimum_size = Vector2(104, 104)
+layout_mode = 2
+theme_type_variation = &"IconButton"
+icon = ExtResource("71_share")
+expand_icon = true
+
+[node name="I2" type="Button" parent="Scroll/VBox/Margin/Inner/IcoRow" unique_id=167454306]
+custom_minimum_size = Vector2(104, 104)
+layout_mode = 2
+theme_type_variation = &"IconButton"
+icon = ExtResource("72_list")
+expand_icon = true
+
+[node name="I3" type="Button" parent="Scroll/VBox/Margin/Inner/IcoRow" unique_id=480691213]
+custom_minimum_size = Vector2(104, 104)
+layout_mode = 2
+theme_type_variation = &"IconButton"
+icon = ExtResource("73_achico")
+expand_icon = true
+
+[node name="I4" type="Button" parent="Scroll/VBox/Margin/Inner/IcoRow" unique_id=1611385183]
+custom_minimum_size = Vector2(104, 104)
+layout_mode = 2
+theme_type_variation = &"IconButton"
+icon = ExtResource("74_fav")
+expand_icon = true
+
+[node name="I5" type="Button" parent="Scroll/VBox/Margin/Inner/IcoRow" unique_id=370314271]
+custom_minimum_size = Vector2(104, 104)
+layout_mode = 2
+theme_type_variation = &"IconButton"
+icon = ExtResource("75_like")
+expand_icon = true
+
+[node name="I6" type="Button" parent="Scroll/VBox/Margin/Inner/IcoRow" unique_id=229154092]
+custom_minimum_size = Vector2(104, 104)
+layout_mode = 2
+theme_type_variation = &"IconButton"
+icon = ExtResource("76_back")
+expand_icon = true
+
+[node name="IcoRow2" type="HBoxContainer" parent="Scroll/VBox/Margin/Inner" unique_id=884979760]
+layout_mode = 2
+theme_override_constants/separation = 16
+alignment = 1
+
+[node name="I7" type="Button" parent="Scroll/VBox/Margin/Inner/IcoRow2" unique_id=771148930]
+custom_minimum_size = Vector2(104, 104)
+layout_mode = 2
+theme_type_variation = &"IconButton"
+icon = ExtResource("66_setting")
+expand_icon = true
+
+[node name="I8" type="Button" parent="Scroll/VBox/Margin/Inner/IcoRow2" unique_id=1899255962]
+custom_minimum_size = Vector2(104, 104)
+layout_mode = 2
+theme_type_variation = &"IconButton"
+icon = ExtResource("65_shop")
+expand_icon = true
+
+[node name="I9" type="Button" parent="Scroll/VBox/Margin/Inner/IcoRow2" unique_id=627223384]
+custom_minimum_size = Vector2(104, 104)
+layout_mode = 2
+theme_type_variation = &"IconButton"
+icon = ExtResource("52_cancel")
+expand_icon = true
+
+[node name="I10" type="Button" parent="Scroll/VBox/Margin/Inner/IcoRow2" unique_id=17073188]
+custom_minimum_size = Vector2(104, 104)
+layout_mode = 2
+theme_type_variation = &"IconButton"
+icon = ExtResource("51_ph")
+expand_icon = true
+
+[node name="ResRow" type="HBoxContainer" parent="Scroll/VBox/Margin/Inner" unique_id=670949094]
+layout_mode = 2
+theme_override_constants/separation = 26
+alignment = 1
+
+[node name="Elixir" type="TextureRect" parent="Scroll/VBox/Margin/Inner/ResRow" unique_id=679012037]
+custom_minimum_size = Vector2(56, 56)
+layout_mode = 2
+texture = ExtResource("67_elixir")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Coin" type="TextureRect" parent="Scroll/VBox/Margin/Inner/ResRow" unique_id=2132453546]
+custom_minimum_size = Vector2(56, 56)
+layout_mode = 2
+texture = ExtResource("68_coin")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Gem" type="TextureRect" parent="Scroll/VBox/Margin/Inner/ResRow" unique_id=346381828]
+custom_minimum_size = Vector2(56, 56)
+layout_mode = 2
+texture = ExtResource("69_gem")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Trophy" type="TextureRect" parent="Scroll/VBox/Margin/Inner/ResRow" unique_id=1003114129]
+custom_minimum_size = Vector2(56, 56)
+layout_mode = 2
+texture = ExtResource("70_trophy")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="ResRow2" type="HBoxContainer" parent="Scroll/VBox/Margin/Inner" unique_id=1170928813]
+layout_mode = 2
+theme_override_constants/separation = 26
+alignment = 1
+
+[node name="Ring" type="TextureRect" parent="Scroll/VBox/Margin/Inner/ResRow2" unique_id=840668441]
+custom_minimum_size = Vector2(80, 80)
+layout_mode = 2
+texture = ExtResource("48_ring")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Step" type="TextureRect" parent="Scroll/VBox/Margin/Inner/ResRow2" unique_id=1951494827]
+custom_minimum_size = Vector2(140, 40)
+layout_mode = 2
+size_flags_vertical = 4
+texture = ExtResource("49_step")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Step2" type="TextureRect" parent="Scroll/VBox/Margin/Inner/ResRow2" unique_id=1678101933]
+custom_minimum_size = Vector2(220, 40)
+layout_mode = 2
+size_flags_vertical = 4
+texture = ExtResource("50_step2")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="t_check" type="Label" parent="Scroll/VBox/Margin/Inner" unique_id=819177074]
+layout_mode = 2
+theme_override_font_sizes/font_size = 26
+text = "── CheckBox(勾选框) / CheckButton(开关) —— 靠 icons 非 styles ──"
+horizontal_alignment = 1
+autowrap_mode = 2
+
+[node name="CheckRow" type="HBoxContainer" parent="Scroll/VBox/Margin/Inner" unique_id=2098624787]
+layout_mode = 2
+theme_override_constants/separation = 40
+alignment = 1
+
+[node name="CB1" type="CheckBox" parent="Scroll/VBox/Margin/Inner/CheckRow" unique_id=1242760751]
+layout_mode = 2
+text = "音效"
+
+[node name="CB2" type="CheckBox" parent="Scroll/VBox/Margin/Inner/CheckRow" unique_id=333790627]
+layout_mode = 2
+button_pressed = true
+text = "音乐"
+
+[node name="CheckRow2" type="HBoxContainer" parent="Scroll/VBox/Margin/Inner" unique_id=1393721878]
+layout_mode = 2
+theme_override_constants/separation = 40
+alignment = 1
+
+[node name="CK1" type="CheckButton" parent="Scroll/VBox/Margin/Inner/CheckRow2" unique_id=1632227245]
+layout_mode = 2
+text = "震动"
+
+[node name="CK2" type="CheckButton" parent="Scroll/VBox/Margin/Inner/CheckRow2" unique_id=1490985310]
+layout_mode = 2
+button_pressed = true
+text = "通知"
+
+[node name="t_opt" type="Label" parent="Scroll/VBox/Margin/Inner" unique_id=910048080]
+layout_mode = 2
+theme_override_font_sizes/font_size = 26
+text = "── OptionButton(下拉) / MenuButton(菜单) / HSeparator(分界线) ──"
+horizontal_alignment = 1
+autowrap_mode = 2
+
+[node name="OptRow" type="HBoxContainer" parent="Scroll/VBox/Margin/Inner" unique_id=685589680]
+layout_mode = 2
+theme_override_constants/separation = 24
+alignment = 1
+
+[node name="Opt" type="OptionButton" parent="Scroll/VBox/Margin/Inner/OptRow" unique_id=1612430493]
+custom_minimum_size = Vector2(240, 82)
+layout_mode = 2
+selected = 0
+item_count = 3
+popup/item_0/text = "浅水层"
+popup/item_0/id = 0
+popup/item_1/text = "中层带"
+popup/item_1/id = 1
+popup/item_2/text = "深海沟"
+popup/item_2/id = 2
+
+[node name="Menu" type="MenuButton" parent="Scroll/VBox/Margin/Inner/OptRow" unique_id=1916135330]
+custom_minimum_size = Vector2(200, 82)
+layout_mode = 2
+text = "菜单"
+flat = false
+item_count = 2
+popup/item_0/text = "设置"
+popup/item_0/id = 0
+popup/item_1/text = "退出"
+popup/item_1/id = 1
+
+[node name="Sep" type="HSeparator" parent="Scroll/VBox/Margin/Inner" unique_id=227093395]
+custom_minimum_size = Vector2(0, 16)
+layout_mode = 2
+
+[node name="t_input" type="Label" parent="Scroll/VBox/Margin/Inner" unique_id=1343338961]
+layout_mode = 2
+theme_override_font_sizes/font_size = 26
+text = "── 输入框 LineEdit / TextEdit(点进去看选中态换图) ──"
+horizontal_alignment = 1
+autowrap_mode = 2
+
+[node name="Input1" type="LineEdit" parent="Scroll/VBox/Margin/Inner" unique_id=2009219649]
+custom_minimum_size = Vector2(0, 86)
+layout_mode = 2
+placeholder_text = "输入潜航编号…"
+
+[node name="Input2" type="TextEdit" parent="Scroll/VBox/Margin/Inner" unique_id=619936539]
+custom_minimum_size = Vector2(0, 200)
+layout_mode = 2
+text = "多行输入框
+第二行文本"
+
+[node name="t_prog" type="Label" parent="Scroll/VBox/Margin/Inner" unique_id=1636673340]
+layout_mode = 2
+theme_override_font_sizes/font_size = 26
+text = "── 进度条 ProgressBar(theme,水青) + TextureProgressBar 三色(青/金/绿) ──"
+horizontal_alignment = 1
+autowrap_mode = 2
+
+[node name="Prog" type="ProgressBar" parent="Scroll/VBox/Margin/Inner" unique_id=330583511]
+custom_minimum_size = Vector2(320, 34)
+layout_mode = 2
+size_flags_horizontal = 4
+value = 62.0
+show_percentage = false
+
+[node name="ProgRow" type="HBoxContainer" parent="Scroll/VBox/Margin/Inner" unique_id=817472086]
+layout_mode = 2
+theme_override_constants/separation = 20
+alignment = 1
+
+[node name="P1" type="TextureProgressBar" parent="Scroll/VBox/Margin/Inner/ProgRow" unique_id=1218911696]
+custom_minimum_size = Vector2(320, 34)
+layout_mode = 2
+value = 75.0
+texture_under = ExtResource("42_progslot")
+texture_progress = ExtResource("43_progfill")
+texture_progress_offset = Vector2(9, 6)
+
+[node name="ProgRow2" type="HBoxContainer" parent="Scroll/VBox/Margin/Inner" unique_id=799855643]
+layout_mode = 2
+theme_override_constants/separation = 20
+alignment = 1
+
+[node name="P2" type="TextureProgressBar" parent="Scroll/VBox/Margin/Inner/ProgRow2" unique_id=430182235]
+custom_minimum_size = Vector2(320, 34)
+layout_mode = 2
+value = 50.0
+texture_under = ExtResource("42_progslot")
+texture_progress = ExtResource("44_progfillg")
+texture_progress_offset = Vector2(9, 6)
+
+[node name="P3" type="TextureProgressBar" parent="Scroll/VBox/Margin/Inner/ProgRow2" unique_id=1107296239]
+custom_minimum_size = Vector2(320, 34)
+layout_mode = 2
+value = 88.0
+texture_under = ExtResource("42_progslot")
+texture_progress = ExtResource("45_progfilln")
+texture_progress_offset = Vector2(9, 6)
+
+[node name="t_slider" type="Label" parent="Scroll/VBox/Margin/Inner" unique_id=1485526625]
+layout_mode = 2
+theme_override_font_sizes/font_size = 26
+text = "── 可拖动横滑块(空槽340x22 + 填充 + 圆键58,运行后鼠标拖) ──"
+horizontal_alignment = 1
+autowrap_mode = 2
+
+[node name="Slider" type="TextureProgressBar" parent="Scroll/VBox/Margin/Inner" unique_id=1167400711]
+custom_minimum_size = Vector2(340, 58)
+layout_mode = 2
+size_flags_horizontal = 4
+mouse_filter = 0
+value = 45.0
+script = ExtResource("4_slider")
+track_margin = 11.0
+track_margin_end = 11.0
+
+[node name="Slot" type="NinePatchRect" parent="Scroll/VBox/Margin/Inner/Slider" unique_id=151696448]
+layout_mode = 1
+anchors_preset = 14
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_top = -11.0
+offset_bottom = 11.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("31_sslot")
+patch_margin_left = 11
+patch_margin_right = 11
+
+[node name="Fill" type="NinePatchRect" parent="Scroll/VBox/Margin/Inner/Slider" unique_id=864515025]
+custom_minimum_size = Vector2(0, 16)
+layout_mode = 0
+texture = ExtResource("32_sfill")
+patch_margin_left = 8
+patch_margin_right = 8
+
+[node name="Grabber" type="TextureRect" parent="Scroll/VBox/Margin/Inner/Slider" unique_id=216715443]
+custom_minimum_size = Vector2(34, 52)
+layout_mode = 0
+mouse_filter = 2
+texture = ExtResource("33_grab")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="t_vert" type="Label" parent="Scroll/VBox/Margin/Inner" unique_id=37506364]
+layout_mode = 2
+theme_override_font_sizes/font_size = 26
+text = "── 竖滑块 / 竖进度条 / 竖滚动条(大键 grabber_inside) ──"
+horizontal_alignment = 1
+autowrap_mode = 2
+
+[node name="VertRow" type="HBoxContainer" parent="Scroll/VBox/Margin/Inner" unique_id=70622120]
+layout_mode = 2
+theme_override_constants/separation = 90
+alignment = 1
+
+[node name="VSlider" type="TextureProgressBar" parent="Scroll/VBox/Margin/Inner/VertRow" unique_id=1255568144]
+custom_minimum_size = Vector2(58, 340)
+layout_mode = 2
+mouse_filter = 0
+value = 45.0
+fill_mode = 3
+script = ExtResource("5_vslider")
+track_margin = 11.0
+track_margin_end = 11.0
+
+[node name="Slot" type="NinePatchRect" parent="Scroll/VBox/Margin/Inner/VertRow/VSlider" unique_id=1036984880]
+layout_mode = 1
+anchors_preset = 13
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -11.0
+offset_right = 11.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("34_vslot")
+patch_margin_top = 11
+patch_margin_bottom = 11
+
+[node name="Fill" type="NinePatchRect" parent="Scroll/VBox/Margin/Inner/VertRow/VSlider" unique_id=1977053626]
+custom_minimum_size = Vector2(16, 0)
+layout_mode = 0
+texture = ExtResource("35_vfill")
+patch_margin_top = 8
+patch_margin_bottom = 8
+
+[node name="Grabber" type="TextureRect" parent="Scroll/VBox/Margin/Inner/VertRow/VSlider" unique_id=322232205]
+custom_minimum_size = Vector2(52, 34)
+layout_mode = 0
+mouse_filter = 2
+texture = ExtResource("78_vgrabh")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="VProg" type="TextureProgressBar" parent="Scroll/VBox/Margin/Inner/VertRow" unique_id=810833244]
+custom_minimum_size = Vector2(34, 320)
+layout_mode = 2
+size_flags_vertical = 4
+value = 70.0
+fill_mode = 3
+texture_under = ExtResource("40_vprogslot")
+texture_progress = ExtResource("41_vprogfill")
+texture_progress_offset = Vector2(6, 9)
+
+[node name="VBar" type="TextureProgressBar" parent="Scroll/VBox/Margin/Inner/VertRow" unique_id=594073154]
+custom_minimum_size = Vector2(28, 320)
+layout_mode = 2
+size_flags_vertical = 4
+mouse_filter = 0
+value = 40.0
+fill_mode = 3
+texture_under = ExtResource("38_vbarslot")
+script = ExtResource("5_vslider")
+grabber_inside = true
+
+[node name="Grabber" type="TextureRect" parent="Scroll/VBox/Margin/Inner/VertRow/VBar" unique_id=1677361132]
+custom_minimum_size = Vector2(24, 96)
+layout_mode = 0
+mouse_filter = 2
+texture = ExtResource("39_vbargrab")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="t_hbar" type="Label" parent="Scroll/VBox/Margin/Inner" unique_id=1322830152]
+layout_mode = 2
+theme_override_font_sizes/font_size = 26
+text = "── 横滚动条(空槽320x28 + 长拖动键96x24,无填充层) ──"
+horizontal_alignment = 1
+autowrap_mode = 2
+
+[node name="HBar" type="TextureProgressBar" parent="Scroll/VBox/Margin/Inner" unique_id=1582234308]
+custom_minimum_size = Vector2(320, 28)
+layout_mode = 2
+size_flags_horizontal = 4
+mouse_filter = 0
+value = 35.0
+texture_under = ExtResource("36_hbarslot")
+script = ExtResource("4_slider")
+grabber_inside = true
+
+[node name="Grabber" type="TextureRect" parent="Scroll/VBox/Margin/Inner/HBar" unique_id=182888321]
+custom_minimum_size = Vector2(96, 24)
+layout_mode = 0
+mouse_filter = 2
+texture = ExtResource("37_hbargrab")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="t_popup" type="Label" parent="Scroll/VBox/Margin/Inner" unique_id=1274343470]
+layout_mode = 2
+theme_override_font_sizes/font_size = 26
+text = "── 弹窗 Panel(水膜框) + 右上取消键(点击关闭) ──"
+horizontal_alignment = 1
+autowrap_mode = 2
+
+[node name="Popup" type="Panel" parent="Scroll/VBox/Margin/Inner" unique_id=1618913605]
+custom_minimum_size = Vector2(620, 460)
+layout_mode = 2
+size_flags_horizontal = 4
+
+[node name="Title" type="Label" parent="Scroll/VBox/Margin/Inner/Popup" unique_id=1137085625]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -220.0
+offset_top = 60.0
+offset_right = 220.0
+offset_bottom = 110.0
+grow_horizontal = 2
+text = "宝箱已解锁"
+horizontal_alignment = 1
+
+[node name="PopSep" type="HSeparator" parent="Scroll/VBox/Margin/Inner/Popup" unique_id=1425561043]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -220.0
+offset_top = 128.0
+offset_right = 220.0
+offset_bottom = 144.0
+grow_horizontal = 2
+
+[node name="PopIcon" type="TextureRect" parent="Scroll/VBox/Margin/Inner/Popup" unique_id=1736221273]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -60.0
+offset_top = 170.0
+offset_right = 60.0
+offset_bottom = 290.0
+grow_horizontal = 2
+texture = ExtResource("62_ni2")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="PopOk" type="Button" parent="Scroll/VBox/Margin/Inner/Popup" unique_id=230917432]
+custom_minimum_size = Vector2(200, 82)
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -100.0
+offset_top = -128.0
+offset_right = 100.0
+offset_bottom = -46.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_type_variation = &"ButtonGold"
+text = "领取"
+
+[node name="CancelBtn" type="TextureButton" parent="Scroll/VBox/Margin/Inner/Popup" unique_id=1891025143]
+custom_minimum_size = Vector2(48, 48)
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -86.0
+offset_top = 38.0
+offset_right = -38.0
+offset_bottom = 86.0
+grow_horizontal = 0
+texture_normal = ExtResource("52_cancel")
+ignore_texture_size = true
+stretch_mode = 5
+script = ExtResource("6_close")
+
+[node name="t_toast" type="Label" parent="Scroll/VBox/Margin/Inner" unique_id=1364477991]
+layout_mode = 2
+theme_override_font_sizes/font_size = 26
+text = "── 提示弹窗 成功/失败/错误/加载(烤了图标的内容图 + 变体按钮叠加) ──"
+horizontal_alignment = 1
+autowrap_mode = 2
+
+[node name="ToastRow" type="HBoxContainer" parent="Scroll/VBox/Margin/Inner" unique_id=7847939]
+layout_mode = 2
+theme_override_constants/separation = 20
+alignment = 1
+
+[node name="OkBox" type="Control" parent="Scroll/VBox/Margin/Inner/ToastRow" unique_id=696610622]
+custom_minimum_size = Vector2(345, 225)
+layout_mode = 2
+
+[node name="OkImg" type="TextureRect" parent="Scroll/VBox/Margin/Inner/ToastRow/OkBox" unique_id=2084951548]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("20_ok")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="OkBtn" type="Button" parent="Scroll/VBox/Margin/Inner/ToastRow/OkBox" unique_id=1506470485]
+custom_minimum_size = Vector2(150, 60)
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -75.0
+offset_top = -68.0
+offset_right = 75.0
+offset_bottom = -8.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_type_variation = &"ButtonGreen"
+theme_override_font_sizes/font_size = 28
+text = "好"
+
+[node name="FailBox" type="Control" parent="Scroll/VBox/Margin/Inner/ToastRow" unique_id=866735044]
+custom_minimum_size = Vector2(345, 225)
+layout_mode = 2
+
+[node name="FailImg" type="TextureRect" parent="Scroll/VBox/Margin/Inner/ToastRow/FailBox" unique_id=1539793461]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("21_fail")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="FailBtn" type="Button" parent="Scroll/VBox/Margin/Inner/ToastRow/FailBox" unique_id=404556081]
+custom_minimum_size = Vector2(150, 60)
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -75.0
+offset_top = -68.0
+offset_right = 75.0
+offset_bottom = -8.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_type_variation = &"ButtonRed"
+theme_override_font_sizes/font_size = 28
+text = "重试"
+
+[node name="ToastRow2" type="HBoxContainer" parent="Scroll/VBox/Margin/Inner" unique_id=1230768096]
+layout_mode = 2
+theme_override_constants/separation = 20
+alignment = 1
+
+[node name="ErrImg" type="TextureRect" parent="Scroll/VBox/Margin/Inner/ToastRow2" unique_id=604804811]
+custom_minimum_size = Vector2(345, 225)
+layout_mode = 2
+texture = ExtResource("22_err")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="LoadImg" type="TextureRect" parent="Scroll/VBox/Margin/Inner/ToastRow2" unique_id=2130701966]
+custom_minimum_size = Vector2(345, 225)
+layout_mode = 2
+texture = ExtResource("23_loading")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="t_pop2" type="Label" parent="Scroll/VBox/Margin/Inner" unique_id=1969510402]
+layout_mode = 2
+theme_override_font_sizes/font_size = 26
+text = "── 弹出面板 PopupPanel 皮肤(用 Panel 展示) / 场景栏 PanelContainerScene ──"
+horizontal_alignment = 1
+autowrap_mode = 2
+
+[node name="Pop2Row" type="HBoxContainer" parent="Scroll/VBox/Margin/Inner" unique_id=1690041550]
+layout_mode = 2
+theme_override_constants/separation = 20
+alignment = 1
+
+[node name="PopPanelDemo" type="PanelContainer" parent="Scroll/VBox/Margin/Inner/Pop2Row" unique_id=1932142619]
+custom_minimum_size = Vector2(340, 240)
+layout_mode = 2
+theme_type_variation = &"PanelContainerScene"
+
+[node name="SceneLabel" type="Label" parent="Scroll/VBox/Margin/Inner/Pop2Row/PopPanelDemo" unique_id=524548017]
+layout_mode = 2
+theme_override_font_sizes/font_size = 30
+text = "场景栏
+PanelContainerScene"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="t_inv" type="Label" parent="Scroll/VBox/Margin/Inner" unique_id=584385068]
+layout_mode = 2
+theme_override_font_sizes/font_size = 26
+text = "── 物品栏 PanelInventory(4列x2行=8格) 点格子水青发光 + 右上取消键 ──"
+horizontal_alignment = 1
+autowrap_mode = 2
+
+[node name="InvWrap" type="Control" parent="Scroll/VBox/Margin/Inner" unique_id=580363488]
+custom_minimum_size = Vector2(720, 360)
+layout_mode = 2
+size_flags_horizontal = 4
+
+[node name="InvBg" type="PanelContainer" parent="Scroll/VBox/Margin/Inner/InvWrap" unique_id=412854493]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_type_variation = &"PanelInventory"
+
+[node name="SlotGrid" type="GridContainer" parent="Scroll/VBox/Margin/Inner/InvWrap/InvBg" unique_id=1890240974]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_constants/h_separation = 12
+theme_override_constants/v_separation = 12
+columns = 4
+
+[node name="Slot0" type="TextureButton" parent="Scroll/VBox/Margin/Inner/InvWrap/InvBg/SlotGrid" unique_id=1616724562]
+material = SubResource("M0")
+custom_minimum_size = Vector2(136, 136)
+layout_mode = 2
+toggle_mode = true
+texture_normal = ExtResource("24_slotimg")
+ignore_texture_size = true
+stretch_mode = 5
+script = ExtResource("7_slot")
+
+[node name="Slot1" type="TextureButton" parent="Scroll/VBox/Margin/Inner/InvWrap/InvBg/SlotGrid" unique_id=2083241185]
+material = SubResource("M1")
+custom_minimum_size = Vector2(136, 136)
+layout_mode = 2
+toggle_mode = true
+texture_normal = ExtResource("24_slotimg")
+ignore_texture_size = true
+stretch_mode = 5
+script = ExtResource("7_slot")
+
+[node name="Slot2" type="TextureButton" parent="Scroll/VBox/Margin/Inner/InvWrap/InvBg/SlotGrid" unique_id=596326554]
+material = SubResource("M2")
+custom_minimum_size = Vector2(136, 136)
+layout_mode = 2
+toggle_mode = true
+texture_normal = ExtResource("24_slotimg")
+ignore_texture_size = true
+stretch_mode = 5
+script = ExtResource("7_slot")
+
+[node name="Slot3" type="TextureButton" parent="Scroll/VBox/Margin/Inner/InvWrap/InvBg/SlotGrid" unique_id=833291413]
+material = SubResource("M3")
+custom_minimum_size = Vector2(136, 136)
+layout_mode = 2
+toggle_mode = true
+texture_normal = ExtResource("24_slotimg")
+ignore_texture_size = true
+stretch_mode = 5
+script = ExtResource("7_slot")
+
+[node name="Slot4" type="TextureButton" parent="Scroll/VBox/Margin/Inner/InvWrap/InvBg/SlotGrid" unique_id=1817030123]
+material = SubResource("M4")
+custom_minimum_size = Vector2(136, 136)
+layout_mode = 2
+toggle_mode = true
+texture_normal = ExtResource("24_slotimg")
+ignore_texture_size = true
+stretch_mode = 5
+script = ExtResource("7_slot")
+
+[node name="Slot5" type="TextureButton" parent="Scroll/VBox/Margin/Inner/InvWrap/InvBg/SlotGrid" unique_id=1739436489]
+material = SubResource("M5")
+custom_minimum_size = Vector2(136, 136)
+layout_mode = 2
+toggle_mode = true
+texture_normal = ExtResource("24_slotimg")
+ignore_texture_size = true
+stretch_mode = 5
+script = ExtResource("7_slot")
+
+[node name="Slot6" type="TextureButton" parent="Scroll/VBox/Margin/Inner/InvWrap/InvBg/SlotGrid" unique_id=292630513]
+material = SubResource("M6")
+custom_minimum_size = Vector2(136, 136)
+layout_mode = 2
+toggle_mode = true
+texture_normal = ExtResource("24_slotimg")
+ignore_texture_size = true
+stretch_mode = 5
+script = ExtResource("7_slot")
+
+[node name="Slot7" type="TextureButton" parent="Scroll/VBox/Margin/Inner/InvWrap/InvBg/SlotGrid" unique_id=652577830]
+material = SubResource("M7")
+custom_minimum_size = Vector2(136, 136)
+layout_mode = 2
+toggle_mode = true
+texture_normal = ExtResource("24_slotimg")
+ignore_texture_size = true
+stretch_mode = 5
+script = ExtResource("7_slot")
+
+[node name="CancelBtn" type="TextureButton" parent="Scroll/VBox/Margin/Inner/InvWrap" unique_id=234956773]
+custom_minimum_size = Vector2(40, 40)
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -70.0
+offset_top = 30.0
+offset_right = -30.0
+offset_bottom = 70.0
+grow_horizontal = 0
+texture_normal = ExtResource("52_cancel")
+ignore_texture_size = true
+stretch_mode = 5
+script = ExtResource("6_close")
+target = NodePath("../InvBg")
+
+[node name="t_ach" type="Label" parent="Scroll/VBox/Margin/Inner" unique_id=312997783]
+layout_mode = 2
+theme_override_font_sizes/font_size = 26
+text = "── 单成就栏 PanelAchievement(左图标 + 中间偏下进度条) ──"
+horizontal_alignment = 1
+autowrap_mode = 2
+
+[node name="AchBar" type="Panel" parent="Scroll/VBox/Margin/Inner" unique_id=344059074]
+custom_minimum_size = Vector2(720, 180)
+layout_mode = 2
+size_flags_horizontal = 4
+theme_type_variation = &"PanelAchievement"
+
+[node name="AchIcon" type="TextureRect" parent="Scroll/VBox/Margin/Inner/AchBar" unique_id=1460705011]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 46.0
+offset_top = -44.0
+offset_right = 134.0
+offset_bottom = 44.0
+grow_vertical = 2
+texture = ExtResource("70_trophy")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="AchLabel" type="Label" parent="Scroll/VBox/Margin/Inner/AchBar" unique_id=86016955]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -160.0
+offset_top = 36.0
+offset_right = 200.0
+offset_bottom = 76.0
+grow_horizontal = 2
+theme_override_font_sizes/font_size = 30
+text = "连胜 8/12"
+
+[node name="AchProg" type="TextureProgressBar" parent="Scroll/VBox/Margin/Inner/AchBar" unique_id=1952945254]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -100.0
+offset_top = 20.0
+offset_right = 220.0
+offset_bottom = 54.0
+grow_horizontal = 2
+grow_vertical = 2
+value = 66.0
+texture_under = ExtResource("42_progslot")
+texture_progress = ExtResource("44_progfillg")
+texture_progress_offset = Vector2(9, 6)
+
+[node name="AchCancel" type="TextureButton" parent="Scroll/VBox/Margin/Inner/AchBar" unique_id=434051408]
+custom_minimum_size = Vector2(34, 34)
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -60.0
+offset_top = 26.0
+offset_right = -26.0
+offset_bottom = 60.0
+grow_horizontal = 0
+texture_normal = ExtResource("52_cancel")
+ignore_texture_size = true
+stretch_mode = 5
+script = ExtResource("6_close")
+
+[node name="t_card" type="Label" parent="Scroll/VBox/Margin/Inner" unique_id=1845037896]
+layout_mode = 2
+theme_override_font_sizes/font_size = 26
+text = "── 卡牌框(左上 COST 角标) / 信息卡片(内嵌进度条,代码驱动 demo) ──"
+horizontal_alignment = 1
+autowrap_mode = 2
+
+[node name="CardRow" type="HBoxContainer" parent="Scroll/VBox/Margin/Inner" unique_id=1124551603]
+layout_mode = 2
+theme_override_constants/separation = 20
+alignment = 1
+
+[node name="Card1" type="TextureRect" parent="Scroll/VBox/Margin/Inner/CardRow" unique_id=281581345]
+custom_minimum_size = Vector2(160, 196)
+layout_mode = 2
+size_flags_vertical = 4
+texture = ExtResource("25_card")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="CardIcon" type="TextureRect" parent="Scroll/VBox/Margin/Inner/CardRow/Card1" unique_id=1591433268]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -34.0
+offset_top = -10.0
+offset_right = 34.0
+offset_bottom = 58.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("60_ni0")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Card2" type="TextureRect" parent="Scroll/VBox/Margin/Inner/CardRow" unique_id=467641679]
+custom_minimum_size = Vector2(160, 196)
+layout_mode = 2
+size_flags_vertical = 4
+texture = ExtResource("25_card")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="CardIcon" type="TextureRect" parent="Scroll/VBox/Margin/Inner/CardRow/Card2" unique_id=1237889414]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -34.0
+offset_top = -10.0
+offset_right = 34.0
+offset_bottom = 58.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("64_ni4")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Info" type="TextureRect" parent="Scroll/VBox/Margin/Inner/CardRow" unique_id=1787567661]
+custom_minimum_size = Vector2(240, 350)
+layout_mode = 2
+texture = ExtResource("26_info")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="InfoIcon" type="TextureRect" parent="Scroll/VBox/Margin/Inner/CardRow/Info" unique_id=1523872648]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -40.0
+offset_top = 60.0
+offset_right = 40.0
+offset_bottom = 140.0
+grow_horizontal = 2
+texture = ExtResource("61_ni1")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="InfoBar" type="TextureProgressBar" parent="Scroll/VBox/Margin/Inner/CardRow/Info" unique_id=843498329]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -90.0
+offset_top = -70.0
+offset_right = 90.0
+offset_bottom = -46.0
+grow_horizontal = 2
+grow_vertical = 0
+value = 40.0
+texture_under = ExtResource("46_cardslot")
+texture_progress = ExtResource("47_cardfill")
+texture_progress_offset = Vector2(8, 5)
+script = ExtResource("8_cardprog")
+
+[node name="t_nav" type="Label" parent="Scroll/VBox/Margin/Inner" unique_id=197910138]
+layout_mode = 2
+theme_override_font_sizes/font_size = 26
+text = "── 横导航栏(单选,点图标水泡跟随) ──"
+horizontal_alignment = 1
+autowrap_mode = 2
+
+[node name="Navbar" type="TextureRect" parent="Scroll/VBox/Margin/Inner" unique_id=1175980802]
+custom_minimum_size = Vector2(750, 116)
+layout_mode = 2
+size_flags_horizontal = 4
+texture = ExtResource("27_navbg")
+expand_mode = 1
+script = ExtResource("2_nav")
+
+[node name="Highlight" type="TextureRect" parent="Scroll/VBox/Margin/Inner/Navbar" unique_id=3515411]
+custom_minimum_size = Vector2(140, 104)
+layout_mode = 0
+offset_right = 140.0
+offset_bottom = 104.0
+texture = ExtResource("28_navhl")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Item0" type="TextureRect" parent="Scroll/VBox/Margin/Inner/Navbar" unique_id=524697736]
+layout_mode = 0
+offset_left = 47.0
+offset_top = 32.0
+offset_right = 103.0
+offset_bottom = 88.0
+texture = ExtResource("60_ni0")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Item1" type="TextureRect" parent="Scroll/VBox/Margin/Inner/Navbar" unique_id=1647425335]
+layout_mode = 0
+offset_left = 197.0
+offset_top = 32.0
+offset_right = 253.0
+offset_bottom = 88.0
+texture = ExtResource("61_ni1")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Item2" type="TextureRect" parent="Scroll/VBox/Margin/Inner/Navbar" unique_id=1786357485]
+layout_mode = 0
+offset_left = 347.0
+offset_top = 32.0
+offset_right = 403.0
+offset_bottom = 88.0
+texture = ExtResource("62_ni2")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Item3" type="TextureRect" parent="Scroll/VBox/Margin/Inner/Navbar" unique_id=653932898]
+layout_mode = 0
+offset_left = 497.0
+offset_top = 32.0
+offset_right = 553.0
+offset_bottom = 88.0
+texture = ExtResource("63_ni3")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Item4" type="TextureRect" parent="Scroll/VBox/Margin/Inner/Navbar" unique_id=1716589708]
+layout_mode = 0
+offset_left = 647.0
+offset_top = 32.0
+offset_right = 703.0
+offset_bottom = 88.0
+texture = ExtResource("64_ni4")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="t_tab" type="Label" parent="Scroll/VBox/Margin/Inner" unique_id=277947418]
+layout_mode = 2
+theme_override_font_sizes/font_size = 26
+text = "── 文字标签栏(单选 + 选中框移动 + 文字变色) ──"
+horizontal_alignment = 1
+autowrap_mode = 2
+
+[node name="Tabbar" type="TextureRect" parent="Scroll/VBox/Margin/Inner" unique_id=646721716]
+custom_minimum_size = Vector2(750, 116)
+layout_mode = 2
+size_flags_horizontal = 4
+texture = ExtResource("27_navbg")
+expand_mode = 1
+script = ExtResource("10_tabbar")
+color_on = Color(0.55, 0.61, 0.56, 1)
+color_off = Color(0.45, 0.52, 0.49, 1)
+
+[node name="Highlight" type="TextureRect" parent="Scroll/VBox/Margin/Inner/Tabbar" unique_id=887195334]
+custom_minimum_size = Vector2(140, 104)
+layout_mode = 0
+offset_right = 140.0
+offset_bottom = 104.0
+texture = ExtResource("28_navhl")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Item0" type="Label" parent="Scroll/VBox/Margin/Inner/Tabbar" unique_id=1156045093]
+layout_mode = 0
+offset_left = 24.0
+offset_right = 164.0
+offset_bottom = 116.0
+theme_override_font_sizes/font_size = 32
+text = "全部"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Item1" type="Label" parent="Scroll/VBox/Margin/Inner/Tabbar" unique_id=2116082491]
+layout_mode = 0
+offset_left = 211.0
+offset_right = 351.0
+offset_bottom = 116.0
+theme_override_font_sizes/font_size = 32
+text = "卡牌"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Item2" type="Label" parent="Scroll/VBox/Margin/Inner/Tabbar" unique_id=1376806293]
+layout_mode = 0
+offset_left = 399.0
+offset_right = 539.0
+offset_bottom = 116.0
+theme_override_font_sizes/font_size = 32
+text = "宝箱"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Item3" type="Label" parent="Scroll/VBox/Margin/Inner/Tabbar" unique_id=410871111]
+layout_mode = 0
+offset_left = 586.0
+offset_right = 726.0
+offset_bottom = 116.0
+theme_override_font_sizes/font_size = 32
+text = "商店"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="t_joy" type="Label" parent="Scroll/VBox/Margin/Inner" unique_id=1796781767]
+layout_mode = 2
+theme_override_font_sizes/font_size = 26
+text = "── 虚拟摇杆(拖动 Knob,松手回中) ──"
+horizontal_alignment = 1
+autowrap_mode = 2
+
+[node name="Joystick" type="TextureRect" parent="Scroll/VBox/Margin/Inner" unique_id=1521478215]
+custom_minimum_size = Vector2(220, 220)
+layout_mode = 2
+size_flags_horizontal = 4
+texture = ExtResource("29_joybg")
+expand_mode = 1
+script = ExtResource("3_joy")
+
+[node name="Knob" type="TextureRect" parent="Scroll/VBox/Margin/Inner/Joystick" unique_id=4206300]
+custom_minimum_size = Vector2(78, 78)
+layout_mode = 0
+texture = ExtResource("30_joyknob")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="t_tree" type="Label" parent="Scroll/VBox/Margin/Inner" unique_id=954304526]
+layout_mode = 2
+theme_override_font_sizes/font_size = 26
+text = "── Tree 控件(水青箭头/连线,可展开折叠) ──"
+horizontal_alignment = 1
+autowrap_mode = 2
+
+[node name="Tree" type="Tree" parent="Scroll/VBox/Margin/Inner" unique_id=1577086288]
+custom_minimum_size = Vector2(620, 360)
+layout_mode = 2
+size_flags_horizontal = 4
+script = ExtResource("9_tree")

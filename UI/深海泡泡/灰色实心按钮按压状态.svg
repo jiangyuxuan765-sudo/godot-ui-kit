@@ -1,0 +1,18 @@
+<svg width="208" height="72" viewBox="0 0 208 72" xmlns="http://www.w3.org/2000/svg">
+<defs>
+<linearGradient id="vg111" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#8FA6B4" stop-opacity="0.22"/><stop offset="1" stop-color="#8FA6B4" stop-opacity="0.11"/></linearGradient>
+<linearGradient id="vg112" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#EAFBFF" stop-opacity="0.13"/><stop offset="1" stop-color="#EAFBFF" stop-opacity="0.02"/></linearGradient>
+<radialGradient id="rg113" cx="34%" cy="28%" r="74%"><stop offset="0" stop-color="#8FA6B4" stop-opacity="0.38"/><stop offset="1" stop-color="#8FA6B4" stop-opacity="0.03"/></radialGradient>
+<radialGradient id="rg114" cx="34%" cy="28%" r="74%"><stop offset="0" stop-color="#EAFBFF" stop-opacity="0.30"/><stop offset="1" stop-color="#EAFBFF" stop-opacity="0.03"/></radialGradient>
+</defs>
+<rect x="2" y="2" width="204" height="68" rx="26" fill="url(#vg111)"/>
+<rect x="2" y="2" width="204" height="68" rx="26" fill="none" stroke="#8FA6B4" stroke-width="1.6" opacity="0.92"/>
+<rect x="11" y="14" width="186" height="44" rx="17" fill="url(#vg112)"/>
+<rect x="11" y="14" width="186" height="44" rx="17" fill="none" stroke="#8FA6B4" stroke-width="1" opacity="0.6"/>
+<path d="M70.7 18.2Q104 11.6 137.3 18.2" fill="none" stroke="#EAFBFF" stroke-width="2.2" opacity="0.6" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="193" cy="40" r="4.6" fill="url(#rg113)"/>
+<circle cx="193" cy="40" r="4.6" fill="none" stroke="#8FA6B4" stroke-width="1" opacity="0.9"/>
+<circle cx="14" cy="41" r="3.8" fill="url(#rg114)"/>
+<circle cx="14" cy="41" r="3.8" fill="none" stroke="#EAFBFF" stroke-width="1" opacity="0.9"/>
+<line x1="26" y1="67" x2="182" y2="67" stroke="#081C2B" stroke-width="2.2" opacity="0.75" stroke-linecap="round"/>
+</svg>

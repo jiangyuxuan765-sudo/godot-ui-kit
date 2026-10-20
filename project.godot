@@ -1,0 +1,21 @@
+; Godot 项目壳 —— 只够跑 UI 主题验收，不含游戏主场景。
+; config_version=5 对应 Godot 4.x。display 的窗口尺寸/stretc 与源库对齐，
+; 因为截图层固定按 1280x1500 出图、场景按这个视口排版。
+
+config_version=5
+
+[application]
+
+config/name="UI组件验收台"
+config/features=PackedStringArray("4.7", "Forward Plus")
+
+[display]
+
+window/size/viewport_width=804
+window/size/viewport_height=1500
+window/stretch/mode="canvas_items"
+window/stretch/aspect="expand"
+
+[rendering]
+
+rendering_device/driver.windows="d3d12"

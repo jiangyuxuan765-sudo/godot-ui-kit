@@ -1,0 +1,24 @@
+<svg width="160" height="196" viewBox="0 0 160 196" xmlns="http://www.w3.org/2000/svg">
+<defs>
+<linearGradient id="vg144" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#7FE3F0" stop-opacity="0.30"/><stop offset="1" stop-color="#7FE3F0" stop-opacity="0.12"/></linearGradient>
+<radialGradient id="rg145" cx="34%" cy="28%" r="74%"><stop offset="0" stop-color="#7FE3F0" stop-opacity="0.36"/><stop offset="1" stop-color="#7FE3F0" stop-opacity="0.03"/></radialGradient>
+<radialGradient id="rg146" cx="34%" cy="28%" r="74%"><stop offset="0" stop-color="#7FE3F0" stop-opacity="0.36"/><stop offset="1" stop-color="#7FE3F0" stop-opacity="0.03"/></radialGradient>
+<radialGradient id="rg147" cx="34%" cy="28%" r="74%"><stop offset="0" stop-color="#7FE3F0" stop-opacity="0.36"/><stop offset="1" stop-color="#7FE3F0" stop-opacity="0.03"/></radialGradient>
+<radialGradient id="rg148" cx="34%" cy="28%" r="74%"><stop offset="0" stop-color="#B48CF0" stop-opacity="0.38"/><stop offset="1" stop-color="#B48CF0" stop-opacity="0.03"/></radialGradient>
+</defs>
+<rect x="1" y="1" width="158" height="194" rx="18" fill="url(#vg144)"/>
+<rect x="1" y="1" width="158" height="194" rx="18" fill="none" stroke="#3FA9C4" stroke-width="1.6" opacity="0.92"/>
+<rect x="7" y="7" width="146" height="182" rx="10" fill="none" stroke="#2A7E99" stroke-width="1" opacity="0.7"/>
+<path d="M40 15.2Q80 8.6 120 15.2" fill="none" stroke="#EAFBFF" stroke-width="1.6" opacity="0.75" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="20" cy="24" r="9" fill="url(#rg145)"/>
+<circle cx="20" cy="24" r="9" fill="none" stroke="#7FE3F0" stroke-width="1.6" opacity="0.9"/>
+<path d="M14.1 23.4A5.9 5.9 0 0 1 17.8 18.5" fill="none" stroke="#EAFBFF" stroke-width="1.4" opacity="0.8" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="30.4" cy="33.5" r="4.7" fill="url(#rg146)"/>
+<circle cx="30.4" cy="33.5" r="4.7" fill="none" stroke="#7FE3F0" stroke-width="1" opacity="0.9"/>
+<circle cx="13.5" cy="36.1" r="3.1" fill="url(#rg147)"/>
+<circle cx="13.5" cy="36.1" r="3.1" fill="none" stroke="#7FE3F0" stroke-width="1" opacity="0.9"/>
+<path d="M121.9 172.9A15 15 0 0 1 150.1 172.9" fill="none" stroke="#B48CF0" stroke-width="2.2" opacity="0.9" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="136" cy="170.5" r="5" fill="url(#rg148)"/>
+<circle cx="136" cy="170.5" r="5" fill="none" stroke="#B48CF0" stroke-width="1" opacity="0.9"/>
+<path d="M132.7 170.2A3.3 3.3 0 0 1 134.8 167.4" fill="none" stroke="#EAFBFF" stroke-width="1" opacity="0.8" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

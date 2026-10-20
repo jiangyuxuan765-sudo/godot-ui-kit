@@ -1,0 +1,13 @@
+<svg width="96" height="96" viewBox="0 0 96 96" xmlns="http://www.w3.org/2000/svg">
+<defs>
+<linearGradient id="vg119" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#7FE3F0" stop-opacity="0.22"/><stop offset="1" stop-color="#7FE3F0" stop-opacity="0.10"/></linearGradient>
+<radialGradient id="rg120" cx="34%" cy="28%" r="74%"><stop offset="0" stop-color="#7FE3F0" stop-opacity="0.42"/><stop offset="1" stop-color="#7FE3F0" stop-opacity="0.03"/></radialGradient>
+</defs>
+<circle cx="48" cy="48" r="45" fill="url(#vg119)"/>
+<circle cx="48" cy="48" r="45" fill="none" stroke="#7FE3F0" stroke-width="1.6" opacity="0.92"/>
+<circle cx="48" cy="51" r="18.2" fill="url(#rg120)"/>
+<circle cx="48" cy="51" r="18.2" fill="none" stroke="#7FE3F0" stroke-width="1.6" opacity="0.95"/>
+<path d="M36 49.7A12 12 0 0 1 43.5 39.8" fill="none" stroke="#EAFBFF" stroke-width="1.4" opacity="0.8" stroke-linecap="round" stroke-linejoin="round"/>
+<line x1="25.5" y1="89" x2="70.5" y2="89" stroke="#081C2B" stroke-width="1.6" opacity="0.7" stroke-linecap="round"/>
+<path d="M16.9 39.1A32.4 32.4 0 0 1 36.9 17.6" fill="none" stroke="#EAFBFF" stroke-width="2.2" opacity="0.8" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

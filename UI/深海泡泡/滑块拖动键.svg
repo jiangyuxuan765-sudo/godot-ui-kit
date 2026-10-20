@@ -1,0 +1,17 @@
+<svg width="34" height="52" viewBox="0 0 34 52" xmlns="http://www.w3.org/2000/svg">
+<defs>
+<radialGradient id="rg131" cx="34%" cy="28%" r="74%"><stop offset="0" stop-color="#7FE3F0" stop-opacity="0.40"/><stop offset="1" stop-color="#7FE3F0" stop-opacity="0.03"/></radialGradient>
+<radialGradient id="rg132" cx="34%" cy="28%" r="74%"><stop offset="0" stop-color="#EAFBFF" stop-opacity="0.34"/><stop offset="1" stop-color="#EAFBFF" stop-opacity="0.03"/></radialGradient>
+<radialGradient id="rg133" cx="34%" cy="28%" r="74%"><stop offset="0" stop-color="#7FE3F0" stop-opacity="0.36"/><stop offset="1" stop-color="#7FE3F0" stop-opacity="0.03"/></radialGradient>
+<radialGradient id="rg134" cx="34%" cy="28%" r="74%"><stop offset="0" stop-color="#7FE3F0" stop-opacity="0.36"/><stop offset="1" stop-color="#7FE3F0" stop-opacity="0.03"/></radialGradient>
+</defs>
+<circle cx="17" cy="26" r="13.6" fill="url(#rg131)"/>
+<circle cx="17" cy="26" r="13.6" fill="none" stroke="#7FE3F0" stroke-width="2.2" opacity="0.95"/>
+<path d="M8.1 25.1A9 9 0 0 1 13.6 17.7" fill="none" stroke="#EAFBFF" stroke-width="1.9" opacity="0.8" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="17" cy="26" r="6" fill="url(#rg132)"/>
+<circle cx="17" cy="26" r="6" fill="none" stroke="#EAFBFF" stroke-width="1" opacity="0.9"/>
+<circle cx="17" cy="5.5" r="3" fill="url(#rg133)"/>
+<circle cx="17" cy="5.5" r="3" fill="none" stroke="#7FE3F0" stroke-width="1" opacity="0.9"/>
+<circle cx="17" cy="46.5" r="3" fill="url(#rg134)"/>
+<circle cx="17" cy="46.5" r="3" fill="none" stroke="#7FE3F0" stroke-width="1" opacity="0.9"/>
+</svg>

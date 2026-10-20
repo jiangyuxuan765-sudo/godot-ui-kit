@@ -1,0 +1,7 @@
+.godot/
+tests/截图/
+.DS_Store
+tools/验收/截图/
+work/
+__pycache__/
+*.py[cod]

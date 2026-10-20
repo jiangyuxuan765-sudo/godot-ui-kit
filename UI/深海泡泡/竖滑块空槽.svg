@@ -1,0 +1,9 @@
+<svg width="22" height="320" viewBox="0 0 22 320" xmlns="http://www.w3.org/2000/svg">
+<defs>
+<linearGradient id="vg135" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#7FE3F0" stop-opacity="0.20"/><stop offset="1" stop-color="#7FE3F0" stop-opacity="0.08"/></linearGradient>
+</defs>
+<rect x="4" y="4" width="14" height="312" rx="7" fill="#081C2B" opacity="0.92"/>
+<rect x="4" y="4" width="14" height="312" rx="7" fill="url(#vg135)"/>
+<rect x="4" y="4" width="14" height="312" rx="7" fill="none" stroke="#3FA9C4" stroke-width="1.6" opacity="0.88"/>
+<line x1="8.8" y1="9" x2="8.8" y2="311" stroke="#EAFBFF" stroke-width="1" opacity="0.5" stroke-linecap="round"/>
+</svg>

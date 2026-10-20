@@ -1,0 +1,37 @@
+<svg width="220" height="220" viewBox="0 0 220 220" xmlns="http://www.w3.org/2000/svg">
+<defs>
+<radialGradient id="rg150" cx="36%" cy="26%" r="78%"><stop offset="0" stop-color="#7FE3F0" stop-opacity="0.30"/><stop offset="1" stop-color="#7FE3F0" stop-opacity="0.06"/></radialGradient>
+<radialGradient id="rg151" cx="34%" cy="28%" r="74%"><stop offset="0" stop-color="#7FE3F0" stop-opacity="0.34"/><stop offset="1" stop-color="#7FE3F0" stop-opacity="0.03"/></radialGradient>
+<radialGradient id="rg152" cx="34%" cy="28%" r="74%"><stop offset="0" stop-color="#7FE3F0" stop-opacity="0.34"/><stop offset="1" stop-color="#7FE3F0" stop-opacity="0.03"/></radialGradient>
+<radialGradient id="rg153" cx="34%" cy="28%" r="74%"><stop offset="0" stop-color="#7FE3F0" stop-opacity="0.34"/><stop offset="1" stop-color="#7FE3F0" stop-opacity="0.03"/></radialGradient>
+<radialGradient id="rg154" cx="34%" cy="28%" r="74%"><stop offset="0" stop-color="#7FE3F0" stop-opacity="0.34"/><stop offset="1" stop-color="#7FE3F0" stop-opacity="0.03"/></radialGradient>
+<radialGradient id="rg155" cx="34%" cy="28%" r="74%"><stop offset="0" stop-color="#7FE3F0" stop-opacity="0.34"/><stop offset="1" stop-color="#7FE3F0" stop-opacity="0.03"/></radialGradient>
+<radialGradient id="rg156" cx="34%" cy="28%" r="74%"><stop offset="0" stop-color="#7FE3F0" stop-opacity="0.34"/><stop offset="1" stop-color="#7FE3F0" stop-opacity="0.03"/></radialGradient>
+<radialGradient id="rg157" cx="34%" cy="28%" r="74%"><stop offset="0" stop-color="#7FE3F0" stop-opacity="0.34"/><stop offset="1" stop-color="#7FE3F0" stop-opacity="0.03"/></radialGradient>
+<radialGradient id="rg158" cx="34%" cy="28%" r="74%"><stop offset="0" stop-color="#7FE3F0" stop-opacity="0.34"/><stop offset="1" stop-color="#7FE3F0" stop-opacity="0.03"/></radialGradient>
+</defs>
+<circle cx="110" cy="110" r="107" fill="url(#rg150)"/>
+<circle cx="110" cy="110" r="107" fill="none" stroke="#7FE3F0" stroke-width="1.6" opacity="0.9"/>
+<circle cx="110" cy="110" r="74.9" fill="none" stroke="#2A7E99" stroke-width="1" opacity="0.7"/>
+<path d="M20 90.9A92 92 0 0 1 87.7 20.7" fill="none" stroke="#EAFBFF" stroke-width="2.2" opacity="0.8" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="202" cy="110" r="6.4" fill="url(#rg151)"/>
+<circle cx="202" cy="110" r="6.4" fill="none" stroke="#7FE3F0" stroke-width="1" opacity="0.9"/>
+<path d="M197.8 109.6A4.2 4.2 0 0 1 200.4 106.1" fill="none" stroke="#EAFBFF" stroke-width="1" opacity="0.8" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="175.1" cy="175.1" r="4.2" fill="url(#rg152)"/>
+<circle cx="175.1" cy="175.1" r="4.2" fill="none" stroke="#7FE3F0" stroke-width="1" opacity="0.9"/>
+<circle cx="110" cy="202" r="6.4" fill="url(#rg153)"/>
+<circle cx="110" cy="202" r="6.4" fill="none" stroke="#7FE3F0" stroke-width="1" opacity="0.9"/>
+<path d="M105.8 201.6A4.2 4.2 0 0 1 108.4 198.1" fill="none" stroke="#EAFBFF" stroke-width="1" opacity="0.8" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="44.9" cy="175.1" r="4.2" fill="url(#rg154)"/>
+<circle cx="44.9" cy="175.1" r="4.2" fill="none" stroke="#7FE3F0" stroke-width="1" opacity="0.9"/>
+<circle cx="18" cy="110" r="6.4" fill="url(#rg155)"/>
+<circle cx="18" cy="110" r="6.4" fill="none" stroke="#7FE3F0" stroke-width="1" opacity="0.9"/>
+<path d="M13.8 109.6A4.2 4.2 0 0 1 16.4 106.1" fill="none" stroke="#EAFBFF" stroke-width="1" opacity="0.8" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="44.9" cy="44.9" r="4.2" fill="url(#rg156)"/>
+<circle cx="44.9" cy="44.9" r="4.2" fill="none" stroke="#7FE3F0" stroke-width="1" opacity="0.9"/>
+<circle cx="110" cy="18" r="6.4" fill="url(#rg157)"/>
+<circle cx="110" cy="18" r="6.4" fill="none" stroke="#7FE3F0" stroke-width="1" opacity="0.9"/>
+<path d="M105.8 17.5A4.2 4.2 0 0 1 108.4 14.1" fill="none" stroke="#EAFBFF" stroke-width="1" opacity="0.8" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="175.1" cy="44.9" r="4.2" fill="url(#rg158)"/>
+<circle cx="175.1" cy="44.9" r="4.2" fill="none" stroke="#7FE3F0" stroke-width="1" opacity="0.9"/>
+</svg>
